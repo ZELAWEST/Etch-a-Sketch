@@ -24,3 +24,7 @@ box-sizing: border-box;
     background-color:rgb(167, 167, 207 );
     transition: 0s;
 }
+button{
+    align-self: flex-start;
+    
+}
