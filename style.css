@@ -7,13 +7,19 @@ body{
 .container{
 height: 960px;
 width: 960px;
+display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 box-sizing: border-box;
+transition: 0s 180s;
 }
 .grid{
     width: 25px;
     height: 25px;
     background-color: rgb(215,215 ,219);
+}
+.grid:hover{
+    background-color:rgb(167, 167, 207 );
+    transition: 0s;
 }
