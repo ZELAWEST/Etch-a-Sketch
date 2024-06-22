@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container{
+height: 960px;
+width: 960px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+}
+.grid{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(215,215 ,219);
+}
