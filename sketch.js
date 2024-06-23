@@ -20,7 +20,7 @@ function draw(tiles) {
 }
 gridSize.addEventListener('click', () => {
     let gridNumber = prompt('How many squares would you like?')
-    alert(isNaN(gridNumber))
+    
     if (!isNaN(gridNumber) && gridNumber < 100) {
         container.textContent = ''
         draw(gridNumber)
