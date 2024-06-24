@@ -6,11 +6,15 @@ function draw(tiles) {
     while (countRow < tiles) {
         let row = document.createElement('div')
         row.classList.add('col')
+        row.addEventListener('mouseover',e =>{
+            e.target.style.backgroundColor = getRandomColor()})
         container.appendChild(row)
         countCol = 0
         while (countCol < tiles) {
             let col = document.createElement('div')
             col.classList.add('col')
+            col.addEventListener('mouseover',e =>{
+                e.target.style.backgroundColor = getRandomColor()})
             row.appendChild(col)
             countCol++
         }
@@ -31,3 +35,10 @@ gridSize.addEventListener('click', () => {
     }
 
 })
+function getRandomColor(){
+    let color = []
+    for(let i = 0;i < 3;i++){
+        color.push(Math.floor(Math.random() * 256))
+    }
+    return 'rgb(' + color.join(',') + ')'
+}
